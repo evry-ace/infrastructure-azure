@@ -8,6 +8,10 @@ variable "environment" {
   default = "demo"
 }
 
+variable "k8s_version" {
+  default = "1.10.7"
+}
+
 variable "cluster_name" {
   default = "ace"
 }
