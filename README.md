@@ -89,35 +89,20 @@ terraform apply \
   -var-file secrets/<cluster>.secrets.tfvars
 ```
 
-*Note:* Creating an new Azure AKS cluster can take up to 15 minutes.
+*Note:* Creating a new Azure AKS cluster can take up to 15 minutes.
 
 ## Kubeconfig
 
-Instructions can be obtained by running the following command
+Save kubernetes config file to `~/.kube/<cluster>`
 
 ```bash
-terraform output configure
-
-Run the following commands to configure kubernetes client:
-
-$ terraform output kube_config > ~/.kube/aksconfig
-$ export KUBECONFIG=~/.kube/aksconfig
-
-Test configuration using kubectl
-
-$ kubectl get nodes
-```
-
-Save kubernetes config file to `~/.kube/aksconfig`
-
-```bash
-terraform output kube_config > ~/.kube/aksconfig
+terraform output kube_config > ~/.kube/<cluster>
 ```
 
 Set `KUBECONFIG` environment variable to the kubernetes config file
 
 ```bash
-export KUBECONFIG=~/.kube/aksconfig
+export KUBECONFIG=~/.kube/<cluster>
 ```
 
 ### Test Kubeconfig
