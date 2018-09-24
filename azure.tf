@@ -5,6 +5,7 @@ variable "tenant_id" {}
 variable "location" {
   default = "North Europe"
 }
+
 variable "ssh_public_key" {}
 
 provider "azurerm" {
@@ -15,11 +16,7 @@ provider "azurerm" {
 }
 
 # https://www.terraform.io/docs/backends/config.html
-# https://www.terraform.io/docs/backends/types/s3.html
+# https://www.terraform.io/docs/backends/types/azurerm.html
 // terraform {
-//   backend "s3" {
-//     bucket = "evry-ace-infra"
-//     key    = "terraform/dns.tfstate"
-//     region = "eu-west-1"
-//   }
+//   backend "azurerm" {}
 // }
