@@ -1,19 +1,19 @@
-## Resource group variables ##
-variable "resource_group_name" {
-  default = "ace"
-}
 
-## AKS kubernetes cluster variables ##
+## Resource group variables ##
 variable "environment" {
   default = "demo"
 }
+variable "resource_group_name" {
+  default = "ace-demo"
+}
 
+## AKS kubernetes cluster variables ##
 variable "k8s_version" {
   default = "1.10.7"
 }
 
 variable "cluster_name" {
-  default = "ace"
+  default = "ace-demo"
 }
 
 variable "agent_count" {
@@ -25,9 +25,10 @@ variable "vm_size" {
 }
 
 variable "dns_prefix" {
-  default = "ace"
+  default = "ace-demo"
 }
 
 variable "admin_username" {
   default = "azureuser"
 }
+
