@@ -28,6 +28,10 @@ variable "dns_prefix" {
   default = "ace-demo"
 }
 
+variable "addon_http_routing" {
+  default = false
+}
+
 variable "admin_username" {
   default = "azureuser"
 }
