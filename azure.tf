@@ -3,7 +3,7 @@ variable "client_id" {}
 variable "client_secret" {}
 variable "tenant_id" {}
 variable "location" {
-  default = "North Europe"
+  default = "West Europe"
 }
 
 variable "ssh_public_key" {}
