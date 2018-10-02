@@ -75,11 +75,11 @@ output "kube_config" {
   sensitive = true
 }
 
-output "host" {
+output "kube_host" {
   value = "${azurerm_kubernetes_cluster.k8s_cluster.kube_config.0.host}"
 }
 
-output "configure" {
+output "kube_configure" {
   value = <<CONFIGURE
 
 Run the following commands to configure kubernetes client:

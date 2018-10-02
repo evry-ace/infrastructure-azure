@@ -15,7 +15,7 @@ Generate Azure Client ID and secret.
 
 ```bash
 az ad sp create-for-rbac \
-  --name="Kubernetes AKS Terraform" \
+  --name="TerraformAKS" \
   --role="Contributor" \
   --scopes="/subscriptions/YOUR_SUBSCRIPTION_ID"
 ```
