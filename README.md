@@ -117,3 +117,7 @@ aks-default-75135322-0   Ready     agent     23m       v1.9.6
 aks-default-75135322-1   Ready     agent     23m       v1.9.6
 aks-default-75135322-2   Ready     agent     23m       v1.9.6
 ```
+
+# Jenkins
+In Powershell do:
+Get-AzureRmMarketplaceTerms -Publisher bitnami -Name jenkins -Product jenkins | Set-AzureRmMarketplaceTerms -Accept
